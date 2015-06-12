@@ -24,7 +24,7 @@ module.exports = function(grunt){
 				'indent':2,
 				'quotmark':'single'
 			},
-			all:['Gruntfile.js','/js/script.js']
+			all:['Gruntfile.js','js/script.js']
 		},
 
 		less:{
@@ -34,7 +34,7 @@ module.exports = function(grunt){
 					report:'gzip'
 				},
 				files:{
-					'dist/css/styles.css':'/css/styles.less'
+					'dist/css/styles.css':'css/styles.less'
 				}
 			}
 		},
@@ -45,7 +45,7 @@ module.exports = function(grunt){
 				banner: '/* Author: Quinton Jason @quintonjasonjr */'
 			},
 				files: {
-				'dist/css/styles.css': ['/css/styles.css']
+				'dist/css/styles.css': ['css/styles.css']
 				}
 			}
 		},
@@ -68,21 +68,21 @@ module.exports = function(grunt){
 					report:'gzip'
 				},
 				files: {
-					'dist/js/script.min.js': ['/js/script.js']
+					'dist/js/script.min.js': ['js/script.js']
 				}
 			}
 		},
 
 		watch: {
 			scripts:{
-				files:'/js/script.js',
+				files:'js/script.js',
 				tasks:['uglify'],
 				options:{
 					livereload:true
 				}
 			},
 			css:{
-				files:'/css/styles.less',
+				files:'css/styles.less',
 				tasks:['less'],
 				options:{
 					livereload:true
