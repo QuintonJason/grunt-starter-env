@@ -52,10 +52,13 @@ module.exports = function(grunt){
 
 		imagemin:{
 			dynamic:{
+				options: {
+            		svgoPlugins: [{ removeViewBox: false }]
+        		},
 				files:[{
 					expand:true,
 					cwd: 'img/',
-					src: ['**/*.{png,jpg,gif}'],
+					src: ['**/*.{png,jpg,gif,svg}'],
 					dest: 'dist/'
 				}]
 			}
