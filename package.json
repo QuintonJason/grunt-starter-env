@@ -12,6 +12,7 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-criticalcss": "^0.1.8",
     "grunt-git": "~0.2.4",
+    "less-plugin-autoprefix": "^1.4.2",
     "load-grunt-tasks": "~0.1.0"
   },
   "dependencies": {

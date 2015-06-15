@@ -31,6 +31,7 @@ module.exports = function(grunt){
 			production: {
 				options:{
 					paths:['dist/css'],
+					plugins:[ new (require('less-plugin-autoprefix'))({browsers: ["last 2 versions"]})],
 					report:'gzip'
 				},
 				files:{
