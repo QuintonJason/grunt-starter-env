@@ -12,6 +12,13 @@ This is my project starting configuration setup which contains:
 
 ### Installation
 
+1. Install [Node](https://nodejs.org/) and  [Grunt](http://gruntjs.com/getting-started) to get started
+
+2. Install the packages
+```sh
+npm install
+```
+
 ### License
 ----
 
