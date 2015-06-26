@@ -40,6 +40,21 @@ module.exports = function(grunt){
 			}
 		},
 
+		svgstore: {
+			options: {
+				prefix : 'svg-',
+				svg: { 
+		        	viewBox : '0 0 1024 1024',
+		        	xmlns: 'http://www.w3.org/2000/svg'
+		      	}
+		    },
+		    dafault: {
+		    	files: {
+		    		'dist/defs.svg':['img/*.svg'], 
+		    	},
+		    },
+		  },
+
 		cssmin: {
 			add_banner: {
 				options: {
@@ -88,6 +103,13 @@ module.exports = function(grunt){
 			css:{
 				files:'css/styles.less',
 				tasks:['less'],
+				options:{
+					livereload:true
+				}
+			},
+			svg:{
+				files: 'img/*.svg',
+				tasks:['svgstore'],
 				options:{
 					livereload:true
 				}
