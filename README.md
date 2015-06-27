@@ -9,6 +9,7 @@ This is my project starting configuration setup which contains:
   - [Uglify](https://github.com/gruntjs/grunt-contrib-uglify)
   - [Autoprefix](https://github.com/less/less-plugin-autoprefix)
   - [Git](https://github.com/rubenv/grunt-git)
+  - [SVGStore](https://github.com/FWeinb/grunt-svgstore)
 
 ### Installation
 
