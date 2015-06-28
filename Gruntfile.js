@@ -32,7 +32,7 @@ module.exports = function(grunt){
 				options:{
 					paths:['dist/css'],
 					plugins:[ new (require('less-plugin-autoprefix'))({browsers: ["last 2 versions"]})],
-					report:'gzip'
+					report:'min',
 				},
 				files:{
 					'dist/css/styles.css':'css/styles.less'
@@ -48,7 +48,7 @@ module.exports = function(grunt){
 		        	xmlns: 'http://www.w3.org/2000/svg'
 		      	}
 		    },
-		    dafault: {
+		    default: {
 		    	files: {
 		    		'dist/defs.svg':['img/*.svg'], 
 		    	},
