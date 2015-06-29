@@ -47,8 +47,7 @@ module.exports = function(grunt){
 			    	indent_size : 4
 			    },
 				svg: { 
-		        	viewBox : '0 0 1024 1024',
-		        	xmlns: 'http://www.w3.org/2000/svg'
+		        	xmlns: 'http://www.w3.org/2000/svg',
 		      	}
 		    },
 		    default: {
