@@ -55,7 +55,7 @@ module.exports = function(grunt){
 		    		'dist/defs.svg':['svg/*.svg'], 
 		    	},
 		    },
-		  },
+		},
 
 		cssmin: {
 			add_banner: {
