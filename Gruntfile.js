@@ -52,7 +52,7 @@ module.exports = function(grunt){
 		    },
 		    default: {
 		    	files: {
-		    		'dist/defs.svg':['img/*.svg'], 
+		    		'dist/defs.svg':['svg/*.svg'], 
 		    	},
 		    },
 		  },
@@ -110,7 +110,7 @@ module.exports = function(grunt){
 				}
 			},
 			svg:{
-				files: 'img/*.svg',
+				files: 'svg/*.svg',
 				tasks:['svgstore'],
 				options:{
 					livereload:true
