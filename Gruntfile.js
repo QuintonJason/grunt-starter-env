@@ -93,7 +93,7 @@ module.exports = function(grunt){
 			my_target: {
 				options: {
 					mangle:false,
-					report:'gzip'
+					report:'min'
 				},
 				files: {
 					'dist/js/script.min.js': ['js/script.js']
